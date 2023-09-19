@@ -1,0 +1,26 @@
+.title-ex6 {
+  font-weight: bold;
+}
+
+.title-link-ex6 {
+  font-weight: 100;
+  color: rgb(146, 146, 146);
+}
+
+.description-ex6 {
+  margin-top: 10px;
+  line-height: 22px;
+}
+
+.description2-ex6 {
+  margin-top: 15px;
+}
+
+.description-link-ex6 {
+  color: rgb(131, 169, 218);
+}
+
+.description-link-ex6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

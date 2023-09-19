@@ -1,0 +1,23 @@
+.value {
+  font-size: 30px;
+}
+
+.currency {
+  color: rgb(135, 135, 135);
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.value-description {
+  color: rgb(0, 149, 0);
+  margin-top: 6px;
+}
+
+.description-info {
+  color: rgb(135, 135, 135);
+  margin-top: 8px; 
+}
+
+.description-info-extra {
+  color: rgb(230, 0, 0);
+}
