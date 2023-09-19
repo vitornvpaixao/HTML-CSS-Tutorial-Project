@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Styles - Exercises</title>
+</head>
+<body>
+  <style>
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ex1, .ex2, .ex3, .ex4, .ex5, .ex6 {
+      margin-bottom: 30px;
+      padding-bottom: 25px;
+      border-bottom: solid 1px rgb(0, 0, 0);
+    }
+
+    .ex3, .ex4 {
+      text-align: center;
+    }
+
+    .title-ex1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .sub-title-ex1 {
+      color: rgb(122, 122, 122);
+      margin-top: 5px;
+    }
+
+    .text-ex1 {
+      width: 300px;
+      margin-top: 18px;
+      line-height: 20px;
+    }
+
+    .btn-ex1 {
+      background-color: rgb(44, 153, 44);
+      color: rgb(255, 255, 255);
+      border: none;
+      margin-top: 15px;
+      padding: 7px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-ex1:hover {
+      background-color: rgb(40, 136, 40);
+    }
+
+    .btn-ex1:active {
+      opacity: 0.8;
+    }
+
+    .title-ex2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .sub-title-ex2 {
+      color: rgb(215, 19, 19);
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .title-ex3 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .sub-title-ex3 {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .link-ex3 {
+      color:rgb(117, 168, 213);
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .link-ex3:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .prod-status-ex4 {
+      font-size: 14px;
+      color: rgb(229, 149, 0);
+    }
+
+    .title-ex4 {
+      font-size: 23px;
+      margin-top: 5px;
+    }
+
+    .sub-title-ex4 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .description-ex4 {
+      font-size: 17px;
+      color: rgb(130, 130, 130);
+      margin-top: 10px;
+    }
+
+    .btn-ex4 {
+      background-color: rgb(80, 139, 228);
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 25px;
+      padding: 8px 13px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    .btn-ex4:active {
+      opacity: 0.8;
+    }
+
+    .value {
+      font-size: 30px;
+    }
+
+    .currency {
+      color: rgb(135, 135, 135);
+      font-size: 15px;
+      margin-left: 2px;
+    }
+
+    .value-description {
+      color: rgb(0, 149, 0);
+      margin-top: 6px;
+    }
+
+    .description-info {
+      color: rgb(135, 135, 135);
+      margin-top: 8px; 
+    }
+
+    .description-info-extra {
+      color: rgb(230, 0, 0);
+    }
+
+    .title-ex6 {
+      font-weight: bold;
+    }
+
+    .title-link-ex6 {
+      font-weight: 100;
+      color: rgb(146, 146, 146);
+    }
+
+    .description-ex6 {
+      margin-top: 10px;
+      line-height: 22px;
+    }
+
+    .description2-ex6 {
+      margin-top: 15px;
+    }
+
+    .description-link-ex6 {
+      color: rgb(131, 169, 218);
+    }
+
+    .description-link-ex6:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+  </style>
+  <div class="ex1">
+    <p class="title-ex1">HTML CSS Course</p>
+    <p class="sub-title-ex1">Beginner to Pro</p>
+    <p class="text-ex1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa amet placeat, alias deleniti hic.</p>
+    <button class="btn-ex1">Get Started</button>
+  </div>
+
+  <div class="ex2">
+    <p class="title-ex2">Biggest Deals of the Year!</p>
+    <p class="sub-title-ex2">Sales end Tuesday</p>
+  </div>
+
+  <div class="ex3">
+    <p class="title-ex3">Shopping for your business?</p>
+    <p class="sub-title-ex3">See how Apple at Work can help.</p>
+    <p class="link-ex3">Learn more &#62</p>
+  </div>
+
+  <div class="ex4">
+    <p class="prod-status-ex4">New</p>
+    <p class="title-ex4">MacBook Pro</p>
+    <p class="sub-title-ex4">Supercharged for pros.</p>
+    <p class="description-ex4">From $1999</p>
+    <button class="btn-ex4">Buy</button>
+  </div>
+
+  <div class="ex5">
+    <p class="value">1,049.61 <span class="currency">USD</span></p>
+    <p class="value-description">+18.05 (1.75%) today</p>
+    <p class="description-info">After hours 1,048.00 <span class="description-info-extra">-1.61 (0.15%)</span></p>
+  </div>
+
+  <div class="ex6">
+    <p class="title-ex6">freeCodeCamp.org <span class="title-link-ex6">@freeCodeCamp 1h</span></p>
+    <p class="description-ex6">As a web developer, you'll want to make your projects easy to use and navigate around.</p>
+    <p class="description2-ex6">Here <span class="description-link-ex6">@chp_it</span> outline the top skills new developers should have.</p>
+  </div>
+</body>
+</html>
