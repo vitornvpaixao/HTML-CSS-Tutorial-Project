@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <style>
+      button {
+        padding: 7px 5px;
+        cursor: pointer;
+      }
+
+      a {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .str {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 8px 8px;
+        background-color: green;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        transition: padding 0.25s;
+      }
+
+      .str:hover {
+        padding: 12px 20px;
+      }
+
+      .three-d {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+        border: none;
+        background-color: green;
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      .three-d:active {
+        margin-left: 1px;
+        margin-top: 1px;
+        box-shadow: none;
+      }
+
+      .btn-m-p {
+        background-color: green;
+        border: none;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: padding 0.15s, margin 0.15s;
+      }
+
+      .btn-m-p:hover {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    </style>
+
+    <button>Back</button>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <button>Next</button>
+
+    <button class="str">Stretch</button>
+
+    <button class="three-d">Shadow</button>
+
+    <div class="btns">
+      <button class="btn-m-p">One</button>
+      <button class="btn-m-p">Two</button>
+      <button class="btn-m-p">Three</button>
+    </div>
+  </body>
+</html>
