@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div Exercises</title>
+
+  <style>
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: solid 1px rgb(0, 0, 0);
+    }
+
+    .red-square {
+      height: 50px;
+      width: 50px;
+      background-color: red;
+    }
+
+    .green-circle {
+      height: 50px;
+      width: 50px;
+      background-color: green;
+      border-radius: 50%;
+    }
+
+    .box-design {
+      width: 300px;
+      padding: 20px 20px;
+      border: solid 1px rgb(195, 195, 195);
+    }
+
+    .title-1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .youtube-music-box {
+      width: 360px;
+      padding: 25px 15px;
+      background-color: rgb(50, 50, 50);
+    }
+
+    .title-2 {
+      font-size: 25px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      margin-bottom: 14px;
+    }
+
+    .description {
+      color: rgb(156, 156, 156);
+    }
+
+    .tweet-box {
+      width: 420px;
+      padding: 13px 13px;
+      border-radius: 7px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-pic {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    .tweet-input {
+      color: rgb(129, 129, 129);
+      margin-left: 10px;
+      border: none;
+      font-size: 16px;
+      vertical-align: middle;
+      outline: none;
+    }
+
+    .tweet-btn {
+      background-color: rgb(29, 155, 240);
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      margin-left: 110px;
+      padding: 8px 13px;
+      border: none;
+      border-radius: 25px;
+      vertical-align: middle;
+    }
+
+    .tweet-btn:hover {
+      background-color: rgb(9, 146, 238);
+    }
+
+    .tweet-btn:active {
+      opacity: 0.8;
+    }
+
+    .friends-box {
+      display: inline-block;
+      height: 265px;
+      width: 160px;
+      margin-right: 15px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-pic-1 {
+      height: 160px;
+      width: 160px;
+      margin-bottom: 7px;
+      object-fit: cover;
+    }
+
+    .friend-name {
+      font-size: 15px;
+      font-weight: bold;
+      margin-left: 7px;
+      margin-bottom: 2px;
+    }
+
+    .mutual-friends {
+      font-size: 14px;
+      color: rgb(146, 146, 146);
+      margin-left: 7px;
+      margin-bottom: 15px;
+    }
+
+    .friends-btn {
+      background-color: rgb(70, 143, 246);
+      color: rgb(255, 255, 255);
+      margin-left: 7px;
+      padding: 10px 17px;
+      border: none;
+      border-radius: 3px;
+
+    }
+
+    .friends-btn:hover {
+      background-color: rgb(45, 127, 243);
+    }
+
+    .friends-btn:active {
+      opacity: 0.8;
+    }
+
+    .google-box {
+      width: 600px;
+      text-align: center;
+      padding: 25px 25px;
+      border: solid 1px lightgray;
+    }
+
+    .google-logo {
+      display: block;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+
+    .google-input-box {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .google-input {
+      height: 35px;
+      width: 500px;
+      padding-left: 15px;
+      font-size: 15px;
+      border: none;
+      border-radius: 25px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+      outline: none;
+      color: rgb(96, 96, 96);
+    }
+
+    .google-btn {
+      background-color: rgb(242, 242, 242);
+      border: none;
+      padding: 10px 15px;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+
+    .google-btn:hover {
+      background-color: rgb(230, 230, 230);
+    }
+
+    .google-btn:active {
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="red-square"></div>
+  </div>
+  
+  <div class="container">
+    <div class="green-circle"></div>
+  </div>
+
+  <div class="container">
+    <div class="box-design">
+      <p class="title-1">Satisfied with our service?</p>
+      <button class="btn-yes">Yes</button>
+      <button class="btn-no">No</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="youtube-music-box">
+      <p class="title-2">Install YouTube Music</p>
+      <p class="description">Add YouTube Music to your desktop for quick and easy access</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tweet-box">
+      <img class="profile-pic" src="../Images/cat.jpg" alt="Profile">
+      <input class="tweet-input" type="" placeholder="What's happening?">
+      <button class="tweet-btn">Tweet</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="friends-box">
+      <img class="profile-pic-1" src="../Images/cat.jpg" alt="Profile">
+      <p class="friend-name">Oliver</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button class="friends-btn">Add Friend</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="friends-box">
+      <img class="profile-pic-1" src="../Images/cat.jpg" alt="Profile">
+      <p class="friend-name">Oliver</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button class="friends-btn">Add Friend</button>
+    </div>
+
+    <div class="friends-box">
+      <img class="profile-pic-1" src="../Images/cat2.jpg" alt="Profile">
+      <p class="friend-name">Mini</p>
+      <p class="mutual-friends">3 mutual friends</p>
+      <button class="friends-btn">Add Friend</button>
+    </div>
+
+    <div class="friends-box">
+      <img class="profile-pic-1" src="../Images/dog.jpg" alt="Profile">
+      <p class="friend-name">Rex</p>
+      <p class="mutual-friends">4 mutual friends</p>
+      <button class="friends-btn">Add Friend</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="google-box">
+      <img class="google-logo" src="../Images/google-logo.png" alt="Google Logo">
+      <div class="google-input-box">
+        <input type="text" class="google-input" placeholder="Search Google or type a URL">
+      </div>
+      <button class="google-btn">Google Search</button>
+      <button class="google-btn">I'm Feeling Lucky</button>
+    </div>
+  </div>
+</body>
+</html>
