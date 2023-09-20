@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Textbox Exercises</title>
+    <style>
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      input {
+        padding: 0;
+        outline: none;
+      }
+
+      .input-1 {
+        height: 25px;
+        padding-left: 10px;
+        border: solid 1px rgb(179, 179, 179);
+        border-radius: 5px;
+      }
+
+      .container, .container1, .container2, .container3 {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: solid 1px rgb(0, 0, 0);
+      }
+
+      .signup-title {
+        color: rgb(113, 113, 113);
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .signup-input {
+        width: 350px;
+        height: 30px;
+        border: solid 2px rgb(98, 98, 98);
+        border-radius: 3px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+      }
+
+      .signup-description {
+        color: rgb(113, 113, 113);
+        width: 356px;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .signup-btn {
+        background-color: rgb(87, 125, 198);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        width: 355px;
+        padding: 12px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+      .signup-btn:hover {
+        background-color: rgb(59, 106, 193);
+      }
+      
+      .signup-btn:active {
+        opacity: 0.8;
+      }
+
+      .search {
+        font-size: 15px;
+        padding-left: 15px;
+        width: 400px;
+        height: 40px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .profile-pic {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .tweet-input {
+        margin-left: 10px;
+        border: none;
+        font-size: 16px;
+        vertical-align: middle;
+      }
+
+      .tweet-btn {
+        background-color: rgb(29, 155, 240);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-left: 130px;
+        padding: 8px 13px;
+        border: none;
+        border-radius: 25px;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+
+      .tweet-btn:hover {
+        background-color: rgb(9, 146, 238);
+      }
+
+      .tweet-btn:active {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" placeholder="Search" class="input-1">
+    </div>
+    
+    <div class="container1">
+      <p class="signup-title">Email</p>
+      <input class="signup-input" type="text" placeholder="">
+      <p class="signup-description">By clicking Agree & Join, you agree to the Privacy Policy.</p>
+      <button class="signup-btn">Agree & Join</button>
+    </div>
+
+    <div class="container2">
+      <input type="text" class="search" placeholder="Search Google or type a URL">
+    </div>
+
+    <div class="container3">
+      <img class="profile-pic" src="images/cat.jpg" alt="Profile">
+      <input class="tweet-input" type="" placeholder="What's happening?">
+      <button class="tweet-btn">Tweet</button>
+    </div>
+
+  </body>
+</html>
