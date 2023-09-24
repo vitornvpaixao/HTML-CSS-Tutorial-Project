@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested Layout Exercises</title>
+
+  <style>
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      display: block;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: solid 1px rgb(0, 0, 0);
+    }
+
+    .tweet-container {
+      width: 400px;
+      padding: 15px 10px;
+      margin-bottom: 15px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .image-container,
+    .profile-container,
+    .btn-container {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .image-container {
+      height: 68px;
+    }
+
+    .profile-image {
+      object-fit: cover;
+      height: 68px;
+      width: 68px;
+      border-radius: 50px;
+      margin-right: 15px;
+    }
+
+    .profile-container {
+      width: 50%;
+      line-height: 20px;
+    }
+    
+    .btn-container {
+      margin-left: 30px;
+    }
+
+    .tweet-btn {
+      background-color: rgb(104, 170, 249);
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+
+    .tweet-btn:hover {
+      background-color: rgb(73, 151, 247);
+    }
+
+    .tweet-btn:active {
+      opacity: 0.8;
+    }
+
+    .video-image {
+      height: 130px;
+    }
+
+    .video-slot {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .video-info {
+      display: inline-block;
+      vertical-align: top;
+      width: 250px;
+    }
+
+    .video-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .video-author,
+    .video-stats {
+      font-size: 15px;
+      color: rgb(112, 112, 112);
+      margin-bottom: 7px;
+    }
+
+    .video-container {
+      margin-bottom: 10px;
+    }
+
+    .friend-container {
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .friend-image-slot {
+      margin-bottom: 10px;
+    }
+
+    .friend-image {
+      height: 215px;
+      width: 215px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .friend-info {
+      margin-left: 10px;
+      margin-bottom: 8px;
+    }
+
+    .friend-title {
+      margin-bottom: 8px;
+    }
+
+    .friend-add-btn {
+      margin-left: 10px;
+      margin-bottom: 8px;
+    }
+
+    .mutual-friends-image {
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .mutual-friends-number {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 7px;
+      margin-left: 5px;
+      font-size: 15px;
+      color: rgb(112, 112, 112);
+    }
+
+    .friend-btn  {
+      background-color: rgb(104, 170, 249);
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+
+    .friend-btn:hover {
+      background-color: rgb(73, 151, 247);
+    }
+
+    .friend-btn:active {
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tweet-container">
+      <div class="image-container">
+        <img class="profile-image" src="../Images/cat.jpg" alt="Funny Cat">
+      </div>
+      <div class="profile-container">
+        <p class="profile-name">oliver</p>
+        <p class="profile-sub-name">the cat</p>
+        <p class="profile-description">Popular</p>
+      </div>
+      <div class="btn-container">
+        <button class="tweet-btn">Follow</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="tweet-container">
+      <div class="image-container">
+        <img class="profile-image" src="../Images/cat.jpg" alt="Funny Cat">
+      </div>
+      <div class="profile-container">
+        <p class="profile-name">oliver</p>
+        <p class="profile-sub-name">the cat</p>
+        <p class="profile-description">Popular</p>
+      </div>
+      <div class="btn-container">
+        <button class="tweet-btn">Follow</button>
+      </div>
+    </div>
+
+    <div class="tweet-container">
+      <div class="image-container">
+        <img class="profile-image" src="../Images/cat2.jpg" alt="Funny Cat">
+      </div>
+      <div class="profile-container">
+        <p class="profile-name">Mimi</p>
+        <p class="profile-sub-name">Sleepy Car</p>
+        <p class="profile-description">Popular</p>
+      </div>
+      <div class="btn-container">
+        <button class="tweet-btn">Follow</button>
+      </div>
+    </div>
+    
+    <div class="tweet-container">
+      <div class="image-container">
+        <img class="profile-image" src="../Images/dog.jpg" alt="Funny Cat">
+      </div>
+      <div class="profile-container">
+        <p class="profile-name">Rex</p>
+        <p class="profile-sub-name">Happy Bulldog</p>
+        <p class="profile-description">Popular</p>
+      </div>
+      <div class="btn-container">
+        <button class="tweet-btn">Follow</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    
+    <div class="video-container">
+      <div class="video-slot">
+        <img class="video-image" src="../Images/thumbnail-1.webp" alt="">
+      </div>
+      <div class="video-info">
+        <p class="video-title">How to compete against CS degrees (as a self-taught dev)</p>
+        <p class="video-author">SuperSimpleDev</p>
+        <p class="video-stats">1.5K views &#183; 4 months ago</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-slot">
+        <img class="video-image" src="../Images/thumbnail-2.webp" alt="">
+      </div>
+      <div class="video-info">
+        <p class="video-title">Which programming language to learn first 2022 (with charts)</p>
+        <p class="video-author">SuperSimpleDev</p>
+        <p class="video-stats">5.7K views &#183; 11 months ago</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-slot">
+        <img class="video-image" src="../Images/thumbnail-3.webp" alt="">
+      </div>
+      <div class="video-info">
+        <p class="video-title">Frontend web development - a complete overview (2021)</p>
+        <p class="video-author">SuperSimpleDev</p>
+        <p class="video-stats">1K views &#183; 4 months ago</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    
+    <div class="friend-container">
+      <div class="friend-image-slot">
+        <img class="friend-image" src="../Images/cat.jpg" alt="">
+      </div>
+      <div class="friend-info">
+        <p class="friend-title">Oliver</p>
+        <div class="mutual-friends-container">
+          <img class="mutual-friends-image" src="../Images/dog2.jpg" alt="">
+          <p class="mutual-friends-number">2 mutual friends</p>
+        </div>
+      </div>
+      <div class="friend-add-btn">
+        <button class="friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="friend-container">
+      <div class="friend-image-slot">
+        <img class="friend-image" src="../Images/cat2.jpg" alt="">
+      </div>
+      <div class="friend-info">
+        <p class="friend-title">Mimi</p>
+        <div class="mutual-friends-container">
+          <img class="mutual-friends-image" src="../Images/dog2.jpg" alt="">
+          <p class="mutual-friends-number">3 mutual friends</p>
+        </div>
+      </div>
+      <div class="friend-add-btn">
+        <button class="friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="friend-container">
+      <div class="friend-image-slot">
+        <img class="friend-image" src="../Images/dog.jpg" alt="">
+      </div>
+      <div class="friend-info">
+        <p class="friend-title">Rex</p>
+        <div class="mutual-friends-container">
+          <img class="mutual-friends-image" src="../Images/dog2.jpg" alt="">
+          <p class="mutual-friends-number">4 mutual friends</p>
+        </div>
+      </div>
+      <div class="friend-add-btn">
+        <button class="friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
