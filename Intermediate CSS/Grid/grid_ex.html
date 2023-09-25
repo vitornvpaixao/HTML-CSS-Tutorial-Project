@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Grid Exercises</title>
+
+  <style>
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container, .container-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: solid 1px rgb(0, 0, 0);
+    }
+
+    .container-1 {
+      grid-template-columns: 195px 195px 195px;
+      column-gap: 25px;
+      row-gap: 15px;
+    }
+
+    .grid-1 {
+      display: grid;
+      grid-template-columns: 200px 75px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    }
+
+    .friends-profile-grid {
+      display: grid;
+      grid-template-rows: 195px 120px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .mutual-friends-slot {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mutual-friends-image {
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .profile-info-slot {
+      margin-left: 8px;
+      margin-top: 10px;
+    }
+
+    .profile-title {
+      font-weight: bold;
+      margin-bottom: 10px
+    }
+
+    .mutual-friends-info {
+      font-size: 15px;
+      color: rgb(146, 146, 146);
+    }
+
+    .add-friend-btn {
+      background-color: rgb(104, 170, 249);
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+
+    .add-friend-btn:hover {
+      background-color: rgb(73, 151, 247);
+    }
+
+    .add-friend-btn:active {
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="grid-1">
+        <div style="background-color: lightgreen;">200px</div>
+        <div style="background-color: lightcoral;">75px</div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="grid-2">
+      <div style="background-color: lightgreen;">col1</div>
+      <div style="background-color: lightcoral;">col2</div>
+      <div style="background-color: lightgreen;">col3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid-3">
+      <div style="background-color: lightgreen;">col1</div>
+      <div style="background-color: lightgreen;">col2</div>
+      <div style="background-color: lightgreen;">col3</div>
+      <div style="background-color: lightgreen;">col4</div>
+      
+      <div style="background-color: lightgreen;">col1</div>
+      <div style="background-color: lightgreen;">col2</div>
+      <div style="background-color: lightgreen;">col3</div>
+      <div style="background-color: lightgreen;">col4</div>
+    </div>
+  </div>
+
+  <div class="container-1">
+    <div class="friends-profile-grid">
+      <div class="profile-image-slot">
+        <img class="profile-image" src="../Images/animals/cat.jpg" alt="">
+      </div>
+      <div class="profile-info-slot">
+        <p class="profile-title">Oliver</p>
+        <div class="mutual-friends-slot">
+          <img class="mutual-friends-image" src="../Images/animals/dog2.jpg" alt="">
+          <p class="mutual-friends-info">2 mutual friends</p>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="friends-profile-grid">
+      <div class="profile-image-slot">
+        <img class="profile-image" src="../Images/animals/cat2.jpg" alt="">
+      </div>
+      <div class="profile-info-slot">
+        <p class="profile-title">Mimi</p>
+        <div class="mutual-friends-slot">
+          <img class="mutual-friends-image" src="../Images/animals/dog2.jpg" alt="">
+          <p class="mutual-friends-info">3 mutual friends</p>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+
+    <div class="friends-profile-grid">
+      <div class="profile-image-slot">
+        <img class="profile-image" src="../Images/animals/dog.jpg" alt="">
+      </div>
+      <div class="profile-info-slot">
+        <p class="profile-title">Rex</p>
+        <div class="mutual-friends-slot">
+          <img class="mutual-friends-image" src="../Images/animals/dog2.jpg" alt="">
+          <p class="mutual-friends-info">4 mutual friends</p>
+        </div>
+        <button class="add-friend-btn">Add Friend</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
