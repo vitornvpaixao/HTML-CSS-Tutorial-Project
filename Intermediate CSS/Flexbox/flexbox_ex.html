@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Exercises</title>
+
+  <style>
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: solid 1px rgb(0, 0, 0);
+    }
+
+    .notifications-slot {
+      width: 250px;
+      border: solid 1px rgb(212, 212, 212);
+      border-radius: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .flex-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 12px;
+    }
+
+    .notifications {
+      background-color: rgb(49, 109, 245);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .follow-container {
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 15px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+      margin-bottom: 15px;
+    }
+
+    .profile-image {
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .profile-info {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .profile-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .profile-sub-name {
+      font-size: 18px;
+      color: rgb(185, 185, 185);
+      margin-bottom: 5px;
+    }
+
+    .profile-description {
+      font-size: 18px;
+      color: rgb(185, 185, 185);
+    }
+
+    .follow-btn {
+      background-color: rgb(104, 170, 249);
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+
+    .follow-btn:hover {
+      background-color: rgb(73, 151, 247);
+    }
+
+    .follow-btn:active {
+      opacity: 0.8;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      background-color: rgb(185, 131, 236);
+      padding: 5px 10px;
+    }
+
+    .left-section {
+      margin-left: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .middle-section {
+      flex: 1;
+      margin-left: 55px;
+      margin-right: 55px;
+      max-width: 600px;
+      padding: 8px 15px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+    }
+
+    .right-section {
+      background-color: rgb(185, 131, 236);
+      color: white;
+      padding: 8px 15px;
+      border: solid 1px rgb(255, 255, 255);
+    }
+
+    .right-section:hover {
+      background-color: rgb(172, 107, 232);
+    }
+
+    .right-section:active {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 200px;
+      ">200px</div>
+      <div style="
+        background-color: lightpink;
+        width: 75px;
+      ">75px</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="
+      display: flex;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 50px;
+      ">item1</div>
+      <div style="
+        background-color: lightpink;
+        flex: 1;
+      ">item2</div>
+      <div style="
+        background-color: lightblue;
+        width: 75px;
+      ">item3</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; 
+    ">
+      <div style="background-color: lightblue;">item1</div>
+      <div style="background-color: lightblue;">item2</div>
+      <div style="background-color: lightblue;">item3</div>
+      <div style="background-color: lightblue;">item4</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      border: solid 1px gray;
+      justify-content: space-between;
+      align-items: center;
+    ">
+      <div style="background-color: lightblue;">item1</div>
+      <div style="background-color: lightblue;">item2</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="notifications-slot">
+      <div class="flex-box">
+        <div>Home</div>
+        <div class="notifications">14</div>
+      </div>
+      <div class="flex-box">
+        <div>Notifications</div>
+        <div class="notifications">3</div>
+      </div>
+      <div class="flex-box">
+        <div>Messages</div>
+        <div class="notifications">5</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="follow-container">
+      <img class="profile-image" src="../Images/animals/cat.jpg" alt="">
+      <div class="profile-info">
+        <p class="profile-name">oliver</p>
+        <p class="profile-sub-name">the cat</p>
+        <p class="profile-description">Popular</p>
+      </div>
+      <button class="follow-btn">Follow</button>
+    </div>
+    <div class="follow-container">
+      <img class="profile-image" src="../Images/animals/cat2.jpg" alt="">
+      <div class="profile-info">
+        <p class="profile-name">Mimi</p>
+        <p class="profile-sub-name">Sleepy Cat</p>
+        <p class="profile-description">Popular</p>
+      </div>
+      <button class="follow-btn">Follow</button>
+    </div>
+    <div class="follow-container">
+      <img class="profile-image" src="../Images/animals/dog.jpg" alt="">
+      <div class="profile-info">
+        <p class="profile-name">Rex</p>
+        <p class="profile-sub-name">Happy Bulldog</p>
+        <p class="profile-description">Popular</p>
+      </div>
+      <button class="follow-btn">Follow</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <div class="left-section">Home</div>
+      <input type="text" class="middle-section" placeholder="Search">
+      <button class="right-section">Donwload</button>
+    </div>
+  </div>
+</body>
+</html>
