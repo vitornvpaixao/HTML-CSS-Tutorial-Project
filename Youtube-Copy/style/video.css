@@ -39,4 +39,5 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 18px;
   row-gap: 40px;
+  padding: 25px 25px;
 }
