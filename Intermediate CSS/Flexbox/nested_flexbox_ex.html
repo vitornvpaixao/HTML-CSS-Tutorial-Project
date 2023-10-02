@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested Flexbox Exercises</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: solid 1px rgb(0, 0, 0);
+    }
+
+    .e1-column-1 {
+      display: flex;
+      flex-direction: row;
+      background-color: lightpink;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 100px;
+    }
+
+    .e1-item1 {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+
+    .e1-column-2 {
+      background-color: lightblue;
+      width: 200px;
+    }
+
+    .e2-column-1 {
+      display: flex;
+      flex-direction: row;
+      background-color: lightpink;
+      width: 100px;
+      height: 50px;
+    }
+
+    .e2-column-2 {
+      background-color: lightblue;
+      width: 200px;
+      height: 50px;
+    }
+
+    .e2-row2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .e2-row2-item {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+
+    .email-container {
+      border-radius: 3px;
+      padding: 15px;
+      padding-bottom: 15px;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    }
+
+    .inbox-title {
+      font-size: 14px;
+      color: rgb(148, 148, 148);
+      margin-bottom: 20px;
+    }
+
+    .email-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .email-info-row {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      width: 350px;
+    }
+
+    .user-image {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .email-title-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .email-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .email-hour {
+      font-size: 14px;
+      color: rgb(148, 148, 148);
+    }
+
+    .user-description {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .twitter-container {
+      border-radius: 3px;
+      padding: 15px;
+      padding-bottom: 15px;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    }
+
+    .twitter-msg-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .profile-image {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .msg-info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      width: 350px;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 8px;
+    }
+
+    .profile-name {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .profile-link {
+      color: rgb(148, 148, 148);
+    }
+
+    .msg {
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    .youtube-attachment {
+      display: flex;
+      flex-direction: row;
+      border-radius: 12px;
+      border: solid 1px rgb(220, 220, 220);
+    }
+
+    .grey-image {
+      height: 100%;
+      width: 50%;
+      background-color: rgb(220, 220, 220);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    
+    .video-info {
+      margin: 15px 10px;
+    }
+
+    .video-origin {
+      font-size: 15px;
+      color: rgb(148, 148, 148);
+      margin-bottom: 5px;
+    }
+
+    .video-title {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="e1-column-1">
+      <div class="e1-item1">item1</div>
+    </div>
+    <div class="e1-column-2"></div>
+  </div>
+  
+  <div class="container">
+    <div class="e2-column-1"></div>
+    <div class="e2-column-2">
+      <div class="e2-row1">row1</div>
+      <div class="e2-row2">
+        <div class="e2-row2-item">row2</div>
+        <div class="e2-row2-item">row2</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="email-container">
+      <div class="inbox-title">ALL INBOXES</div>
+      <div class="email-row">
+        <img class="user-image" src="../Images/animals/cat.jpg" alt="">
+        <div class="email-info-row">
+          <div class="email-title-container">
+            <p class="email-title">Chewy Promotions</p>
+            <p class="email-hour">4:58 PM</p>
+          </div>
+          <p class="user-description">Biggest sales of the year!</p>
+          <p class="user-message">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </div>
+
+      <div class="email-row">
+        <img class="user-image" src="../Images/animals/cat2.jpg" alt="">
+        <div class="email-info-row">
+          <div class="email-title-container">
+            <p class="email-title">Best Buy</p>
+            <p class="email-hour">12:32 PM</p>
+          </div>
+          <p class="user-description">Your Best Buy eReceipt</p>
+          <p class="user-message">Thank you for shopping at Best Buy, here is...</p>
+        </div>
+      </div>
+
+      <div class="email-row">
+        <img class="user-image" src="../Images/animals/dog.jpg" alt="">
+        <div class="email-info-row">
+          <div class="email-title-container">
+            <p class="email-title">Netflix</p>
+            <p class="email-hour">9:00 AM</p>
+          </div>
+          <p class="user-description">Here's what's coming soon to Netflix</p>
+          <p class="user-message">Brand new movies and shows, old favorites...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="twitter-container">
+      <div class="twitter-msg-row">
+        <img src="../Images/animals/dog2.jpg" alt="" class="profile-image">
+        <div class="msg-info">
+          <div class="profile-info">
+            <p class="profile-name">supersimple.dev</p>
+            <p class="profile-link">@SuperSimpleDev</p>
+          </div>
+          <p class="msg">What is backend web development? A complete overview. New video is up!</p>
+          <div class="youtube-attachment">
+            <div class="grey-image"></div>
+            <div class="video-info">
+              <p class="video-origin">youtube.com</p>
+              <p class="video-title">Backend web development - a complete overview (2021)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
