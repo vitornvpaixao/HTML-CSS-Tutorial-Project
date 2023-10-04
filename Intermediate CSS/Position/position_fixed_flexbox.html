@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Fixed and Flexbox Exercises</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0;
+      height: 1000px;
+      margin-left: 300px;
+      margin-top: 100px;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    button {
+      border: none;
+      padding: 10px 15px;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 50px;
+      background-color: rgb(240, 240, 240);
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .profile-image {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .profile-name {
+      font-size: 19px;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+
+    .add-btn {
+      background-color: rgb(24, 119, 242);
+      color: rgb(255, 255, 255);
+      margin-right: 10px;
+    }
+
+    .add-btn:hover {
+      background-color: rgb(10, 110, 240);
+    }
+
+    .add-btn:active {
+      opacity: 0.8;
+    }
+
+    .msg-btn {
+      background-color: rgb(230, 230, 230);
+    }
+
+    .msg-btn:hover {
+      background-color: rgb(215, 215, 215);
+    }
+
+    .msg-btn:active {
+      opacity: 0.8;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .sb-left-section {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(67, 67, 67);
+      position: fixed;
+      top: 70px;
+      left: 0;
+      bottom: 0;
+      padding: 15px 10px;
+    }
+
+    .sb-right-section {
+      position: fixed;
+      top: 70px;
+      left: 90px;
+      bottom: 0;
+      width: 200px;
+      background-color: rgb(96, 96, 96);
+    }
+
+    .sidebar-image-section {
+      margin-bottom: 10px;
+    }
+
+    .sidebar-image {
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .sidebar-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+
+    .sidebar-info-channels {
+      font-weight: bold;
+      color: rgb(255, 255, 255)
+    }
+
+    .siderbar-add-channels-btn {
+      font-size: 30px;
+      font-weight: 100;
+      border: none;
+      background-color: rgb(96, 96, 96);
+      color: rgb(190, 190, 190);
+      padding: 0;
+    }
+
+    .sidebar-channels {
+      margin: 0px 20px;
+    }
+
+    .channels {
+      font-size: 17px;
+      margin-bottom: 15px;
+      color: rgb(190, 190, 190);
+    }
+
+    .content {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="right-section">
+      <img src="../Images/animals/cat.jpg" alt="" class="profile-image">
+      <p class="profile-name">Oliver Car</p>
+    </div>
+    <div class="left-section">
+      <button class="add-btn">Add Friend</button>
+      <button class="msg-btn">Message</button>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sb-left-section">
+      <div class="sidebar-image-section">
+        <img src="../Images/animals/cat.jpg" alt="" class="sidebar-image">
+      </div>
+      <div class="sidebar-image-section">
+        <img src="../Images/animals/cat2.jpg" alt="" class="sidebar-image">
+      </div>
+      <div class="sidebar-image-section">
+        <img src="../Images/animals/dog.jpg" alt="" class="sidebar-image">
+      </div>
+    </div>
+    <div class="sb-right-section">
+      <div class="sidebar-info">
+        <p class="sidebar-info-channels">INFO</p>
+        <button class="siderbar-add-channels-btn">+</button>
+      </div>
+      <div class="sidebar-channels">
+        <p class="channels"># new-videos</p>
+        <p class="channels"># updates</p>
+        <p class="channels"># new-videos</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis architecto consectetur a dolore quas ut ea quo optio inventore, quidem ullam eligendi minima perferendis nisi! Fugiat a facere voluptates accusamus.</div>
+  <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis architecto consectetur a dolore quas ut ea quo optio inventore, quidem ullam eligendi minima perferendis nisi! Fugiat a facere voluptates accusamus.</div>
+  <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis architecto consectetur a dolore quas ut ea quo optio inventore, quidem ullam eligendi minima perferendis nisi! Fugiat a facere voluptates accusamus.</div>
+</body>
+</html>
