@@ -8,6 +8,7 @@
 }
 
 .thumbnail-row {
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -40,4 +41,16 @@
   column-gap: 18px;
   row-gap: 40px;
   padding: 25px 25px;
+}
+
+.video-time {
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+  padding: 4px 4px;
+  border-radius: 2px;
 }

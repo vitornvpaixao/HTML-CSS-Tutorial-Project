@@ -10,6 +10,8 @@
   right: 0;
   left: 0;
   background-color: rgb(255, 255, 255);
+
+  z-index: 10;
 }
 
 .left-section {
@@ -117,4 +119,25 @@
 
 .channel-image {
   height: 32px;
+}
+
+.notification-icon-container {
+  position: relative;
+}
+
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  font-size: 11px;
+  padding: 1px 4px;
+  padding-top: 2px;
+
+  background-color: rgb(201, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.tooltip {
+  display: none;
 }
