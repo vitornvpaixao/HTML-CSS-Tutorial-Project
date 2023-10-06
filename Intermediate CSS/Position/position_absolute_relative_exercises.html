@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Absolute and Relative Exercises</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 3000px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+      border: none;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      padding: 9px 14px;
+      padding-top: 10px;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .rectangle {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      height: 180px;
+      width: 320px;
+      background-color: rgb(153, 153, 153);
+    }
+
+    .rectangle-close-btn {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+
+      border: none;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      padding: 9px 14px;
+      padding-top: 10px;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
+    .rectangle-time {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+
+      background-color: rgba(0, 0, 0, 0.8);
+      color: rgb(255, 255, 255);
+
+      padding: 5px 7px;
+    }
+
+    .cloth-container {
+      position: relative;
+      display: inline-block;
+      margin-right: 25px;
+    }
+
+    .discount {
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      padding: 8px 12px;
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+    }
+
+    .selling-shirt {
+      object-fit: cover;
+      height: 300px;
+      width: 250px;
+    }
+
+    .add-cart-contaier {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      height: 100px;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .add-btn {
+      background-color: rgb(255, 255, 255);
+      border: solid 1px rgb(64, 64, 64);
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    .add-btn:hover {
+      background-color: rgb(240, 240, 240);
+    }
+
+    .add-btn:active {
+      background-color: rgb(230, 230, 230);
+    }
+
+  </style>
+</head>
+<body>
+  <button class="close-btn">X</button>
+
+  <div class="rectangle">
+    <button class="rectangle-close-btn">X</button>
+    <p class="rectangle-time">0:29</p>
+  </div>
+
+  <div class="cloth-container">
+    <img class="selling-shirt" src="../Images/shirt.jpg" alt=" shirt">
+    <div class="discount">20 % OFF</div>
+  </div>
+
+  <div class="cloth-container">
+    <img class="selling-shirt" src="../Images/shirt.jpg" alt=" shirt">
+    <div class="discount">20 % OFF</div>
+    <div class="add-cart-contaier">
+      <button class="add-btn">Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Absolut Practice</title>
+  </head>
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 70px;
+  ">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      z-index: 1;
+    ">header</div>
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      width: 70px;
+    ">sidebar
+      <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 0;
+      top: 0;
+    ">
+       X
+     </div>
+    </div>
+
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 60px;
+      top: 10px;
+      z-index: 2;
+    "> 
+      absolute
+    </div>
+
+  <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+  ">div1
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 0;
+      top: 0;
+    ">
+      X
+    </div>
+    </div>
+  <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;
+  ">div2
+    <div style="
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      right: 10px;
+      bottom: 10px;
+      padding: 3px 5px;
+      border-radius: 3px;
+    ">
+      5:00
+    </div>
+  </div> 
+  </body>
+</html>
