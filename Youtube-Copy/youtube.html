@@ -22,17 +22,26 @@
         <input type="text" class="search-bar" placeholder="Search ">
         <button class="search-btn">
           <img class="search-icon" src="icons/search.svg" alt="">
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-btn">
           <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+          <div class="tooltip">Search with voice</div>
         </button>
       </div>
       <div class="right-section">
-        <img class="icon" src="icons/upload.svg" alt="">
-        <img class="icon" src="icons/youtube-apps.svg" alt="">
+        <div class="upload-icon-container">
+          <img class="icon" src="icons/upload.svg" alt="">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="icon" src="icons/youtube-apps.svg" alt="">
+          <div class="tooltip">Youtube Apps</div>
+        </div>
         <div class="notification-icon-container">
           <img class="icon" src="icons/notifications.svg" alt="">       
           <p class="notification-count">3</p>
+          <div class="tooltip">Youtube Apps</div>
         </div>    
         <img class="channel-image" src="icons/my-channel.jpeg" alt="">
       </div>
@@ -72,8 +81,17 @@
           <p class="video-time">14:20</p>
         </div>
         <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="Channel Picture">
+          <div>
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="Channel Picture">
+              <div class="profile-toottip">
+                <img src="channel-pictures/channel-1.jpeg" alt="" class="profile-tooltip-picture">
+                <div class="profile-info">
+                  <p class="profile-tooltip-name">Marques Brownlee</p>
+                  <p class="profile-tooltip-followers">15M subscribers</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="video-info">
             <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
@@ -89,8 +107,17 @@
           <p class="video-time">8:22</p>
         </div>
         <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="Channel Picture">
+          <div>
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="Channel Picture">
+              <div class="profile-toottip">
+                <img src="channel-pictures/channel-2.jpeg" alt="" class="profile-tooltip-picture">
+                <div class="profile-info">
+                  <p class="profile-tooltip-name">Markiplier</p>
+                  <p class="profile-tooltip-followers">5M subscribers</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="video-info">
             <p class="video-title">Try Not To Laugh Challenge #9</p>
@@ -106,8 +133,17 @@
           <p class="video-time">9:13</p>
         </div>
         <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channel-3.jpeg" alt="Channel Picture">
+          <div>
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channel-3.jpeg" alt="Channel Picture">
+              <div class="profile-toottip">
+                <img src="channel-pictures/channel-3.jpeg" alt="" class="profile-tooltip-picture">
+                <div class="profile-info">
+                  <p class="profile-tooltip-name">SSSniperWolf</p>
+                  <p class="profile-tooltip-followers">35M subscribers</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="video-info">
             <p class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</p>
@@ -123,8 +159,17 @@
           <p class="video-time">22:09</p>
         </div>
         <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channel-4.jpeg" alt="Channel Picture">
+          <div>
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channel-4.jpeg" alt="Channel Picture">
+              <div class="profile-toottip">
+                <img src="channel-pictures/channel-4.jpeg" alt="" class="profile-tooltip-picture">
+                <div class="profile-info">
+                  <p class="profile-tooltip-name">Veritasium</p>
+                  <p class="profile-tooltip-followers">55M subscribers</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="video-info">
             <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
@@ -140,8 +185,17 @@
           <p class="video-time">11:17</p>
         </div>
         <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-picture" src="channel-pictures/channel-5.jpeg" alt="Channel Picture">
+          <div>
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channel-5.jpeg" alt="Channel Picture">
+              <div class="profile-toottip">
+                <img src="channel-pictures/channel-5.jpeg" alt="" class="profile-tooltip-picture">
+                <div class="profile-info">
+                  <p class="profile-tooltip-name">CS Dojo</p>
+                  <p class="profile-tooltip-followers">2.5M subscribers</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="video-info">
             <p class="video-title">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
@@ -159,14 +213,166 @@
         <div class="video-info-grid">
           <div class="channel-picture">
             <img class="profile-picture" src="channel-pictures/channel-6.jpeg" alt="Channel Picture">
+            <div class="profile-toottip">
+              <img src="channel-pictures/channel-6.jpeg" alt="" class="profile-tooltip-picture">
+              <div class="profile-info">
+                <p class="profile-tooltip-name">MrBeast</p>
+                <p class="profile-tooltip-followers">355M subscribers</p>
+              </div>
+            </div>
           </div>
           <div class="video-info">
-            <p class="video-title">Anything You Can Fit In The Circle I’ll Pay For</p>
+            <p class="video-title">Anything You Can Fit In The Circle I'll Pay For</p>
             <p class="video-author">MrBeast</p>
             <p class="video-stats">141M views &#183; 1 year ago</p>
           </div>
         </div>
       </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-7.webp" alt="Video Image">
+          <p class="video-time">10:13</p>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-7.jpeg" alt="Channel Picture">
+            <div class="profile-toottip">
+              <img src="channel-pictures/channel-7.jpeg" alt="" class="profile-tooltip-picture">
+              <div class="profile-info">
+                <p class="profile-tooltip-name">RealLifeLore</p>
+                <p class="profile-tooltip-followers">27M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Why Planes Don't Fly Over Tibet</p>
+            <p class="video-author">RealLifeLore</p>
+            <p class="video-stats">6.6M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-8.webp" alt="Video Image">
+          <p class="video-time">7:12</p>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-8.jpeg" alt="Channel Picture">
+            <div class="profile-toottip">
+              <img src="channel-pictures/channel-8.jpeg" alt="" class="profile-tooltip-picture">
+              <div class="profile-info">
+                <p class="profile-tooltip-name">Tech Vision</p>
+                <p class="profile-tooltip-followers">15M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Inside The World's Biggest Passenger Plane</p>
+            <p class="video-author">Tech Vision</p>
+            <p class="video-stats">3.6M views &#183; 10 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-9.webp" alt="Video Image">
+          <p class="video-time">13:12</p>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-9.jpeg" alt="Channel Picture">
+            <div class="profile-toottip">
+              <img src="channel-pictures/channel-9.jpeg" alt="" class="profile-tooltip-picture">
+              <div class="profile-info">
+                <p class="profile-tooltip-name">ThenX</p>
+                <p class="profile-tooltip-followers">68M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">The SECRET to Super Human STRENGTH</p>
+            <p class="video-author">ThenX</p>
+            <p class="video-stats">20M views &#183; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-10.webp" alt="Video Image">
+          <p class="video-time">7:53</p>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-10.jpeg" alt="Channel Picture">
+            <div class="profile-toottip">
+              <img src="channel-pictures/channel-10.jpeg" alt="" class="profile-tooltip-picture">
+              <div class="profile-info">
+                <p class="profile-tooltip-name">Business Insider</p>
+                <p class="profile-tooltip-followers">29M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+            <p class="video-author">Business Insider</p>
+            <p class="video-stats">14M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-11.webp" alt="Video Image">
+          <p class="video-time">4:10</p>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-11.jpeg" alt="Channel Picture">
+            <div class="profile-toottip">
+              <img src="channel-pictures/channel-11.jpeg" alt="" class="profile-tooltip-picture">
+              <div class="profile-info">
+                <p class="profile-tooltip-name">Destination Tips</p>
+                <p class="profile-tooltip-followers">17M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+            <p class="video-author">Destination Tips</p>
+            <p class="video-stats">3M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-12.webp" alt="Video Image">
+          <p class="video-time">4:51</p>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-pictures/channel-12.jpeg" alt="Channel Picture">
+            <div class="profile-toottip">
+              <img src="channel-pictures/channel-12.jpeg" alt="" class="profile-tooltip-picture">
+              <div class="profile-info">
+                <p class="profile-tooltip-name">TED-Ed</p>
+                <p class="profile-tooltip-followers">29M subscribers</p>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-title">What would happen if you didn’t drink water? - Mia Nacamulli</p>
+            <p class="video-author">TED-Ed</p>
+            <p class="video-stats">12M views &#183; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

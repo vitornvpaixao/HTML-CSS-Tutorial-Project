@@ -3,13 +3,14 @@
 }
 
 .profile-picture {
-  width: 40px;
+  position: relative;
+  width: 36px;
   border-radius: 50px;
 }
 
 .thumbnail-row {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .video-title {
@@ -53,4 +54,49 @@
   color: rgb(255, 255, 255);
   padding: 4px 4px;
   border-radius: 2px;
+}
+
+.profile-toottip {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  padding: 12px 12px;
+ 
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.profile-tooltip-picture {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.profile-tooltip-name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-tooltip-followers {
+  font-size: 15px;
+  color: rgb(96, 96, 96);
+}
+
+.channel-picture:hover .profile-toottip{
+  opacity: 1;
 }
