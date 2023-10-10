@@ -1,6 +1,6 @@
 # HTML & CSS Tutorial Project - @SuperSimpleDev (Youtube Replica)
 
-This repository is an implementation based on the tutorial video "[HTML & CSS Full Course - Beginner to Pro | @SuperSimpleDev](https://www.youtube.com/watch?v=G3e-cpL7ofc&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&index=3)," and it is intended to provide a step-by-step guide for those who wish to learn HTML and CSS. However, it's important to note that this project may contain significant differences in the HTML and CSS code compared to the content presented in the original video.
+This repository is an implementation based on the tutorial video "[HTML & CSS Full Course - Beginner to Pro | @SuperSimpleDev](https://www.youtube.com/watch?v=G3e-cpL7ofc&list=PLEPye7A7EcQZrT3VSBb7jtxnxIfY3yyG6&index=3),". It's important to note that this project may contain significant differences in the HTML and CSS code compared to the content presented in the original video.
 
 ## Important Differences
 
